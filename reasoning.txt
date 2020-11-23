@@ -23,6 +23,10 @@
                  - add a time component?
                      - Timestamp Server (https://en.wikipedia.org/wiki/Trusted_timestamping)
                          - takes a hash of a ledger or "block" and publicises the hash so that people know
+                             - How do people know? Which hash should they trust? Which block should they add as the final official transaction?
+                                 - proof of work
+                                     - solve a computational math problem and if you can you are given approval
+                                        to add a block (list of transactions at a given time) to the blockchain
                                 these n transactions took place during this time
                                      - the hash also includes the hash of the previous time stamp to it forms a sort of
                                         chain of blocks
