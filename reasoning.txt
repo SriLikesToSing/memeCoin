@@ -30,6 +30,16 @@
                                 these n transactions took place during this time
                                      - the hash also includes the hash of the previous time stamp to it forms a sort of
                                         chain of blocks
+                    - How a new block is added to the chain
+                         - New transaction is brodcasted to all nodes
+                         - Each node collects new transactions into a block
+                         - Each node wokrs on finding a difficult proof-of-work for its block.
+                         - When a node find a proof-of-work, it brodcasts the block to all nodes
+                         - Nodes accept the block only if all transactions in it is valid
+                             - valid means checking the double spending problem since now we have the time metric
+                         - Nodes accept this block if people build off of this block
+                            - You cannot go back if you build off
+
 
 
 - How does paypal or banks determine scams such as someone claiming someone needs to pay them $50 when in reality they havent?
@@ -43,8 +53,19 @@
         - Can't someone copy the digital signature because of its inheriant properties?
              - cryptography to the rescue
 
+- How can someone hack a central transaction system such as paypal or a bank or get more money then there should?
+     - You can hack its systems and take money
+     - You can divert payments to yourself
+     - Social engineering
+     - Fake money/Black money
 
+- How can someone hack a cryptocurrency?
+     - know a private key of a certain user
+     - know the wallet account for a certain person
 
+     - If Nodes are immune to false info and generation of coins from thin air is there any other way?
+         - the only other way is to take back money he recently spent getting value for free
+            -
 
 
 
@@ -57,5 +78,5 @@
 
 
                 ------------MemeCoin-------------
----a cryptocurrency implimentation completely from scratch---
+---a cryptocurrency implimentation made by a high schooler completely from scratch---
 
